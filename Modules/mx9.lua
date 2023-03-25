@@ -111,4 +111,10 @@ function mx9:DrawCircle(posX, posY, thickness, numSides, radius, bgColor)
     return Set    
 end
 
+function mx9:RemoveDrawn() 
+    for _, drawn in next, mx9.__drawn do 
+        if drawn then drawn:Remove() end
+    end
+end
+
 return mx9
