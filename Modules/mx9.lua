@@ -66,9 +66,9 @@ function mx9:DrawString(text, posX, posY, size, font, bgColor)
     String.Visible = true;
     String.Transparency = 1;
     String.Color = bgColor;
-    Square.Size = size;
-    Square.Position = Vector2.new(posX, posY);
-    Square.Font = font;
+    String.Size = size;
+    String.Position = Vector2.new(posX, posY);
+    String.Font = font;
     
     mx9:InsertToDrawn(String);
     
