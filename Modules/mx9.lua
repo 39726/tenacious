@@ -8,7 +8,7 @@ function mx9:GetDrawn()
 end
 
 function mx9:InsertToDrawn(object) 
-    if object then mx9.__index[#mx9.__index+1] = object end
+    if object then table.insert(mx9.__drawn, object) end
 end
 
 function mx9:DrawSquare(posX, posY, sizeX, sizeY, bgColor) 
