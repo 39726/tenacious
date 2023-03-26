@@ -1,6 +1,4 @@
 local mx9 = {}
-
-mx9.__index = mx9
 mx9.__drawn = {}
 
 function mx9:GetDrawn()
